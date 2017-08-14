@@ -1,0 +1,49 @@
+.c4d-woo-qv {
+	display: none;
+	padding: 45px 30px;
+	background: #fff;
+	max-width: 1200px;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	&__gallery {
+		width: 50%;
+		float: left;
+		&_inner {
+			padding: 15px;
+			.wp-post-image {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	&__info {
+		width: 50%;
+		float: left;
+		&_inner {
+			padding: 15px;
+		}
+	}
+}
+body {
+	.fancybox-outer {
+		.fancybox-nav {
+			width: 36px;
+		}
+		.fancybox-prev {
+			left: -15px;
+		}
+		.fancybox-next {
+			right: -15px;
+		}	
+		&:hover {
+			.fancybox-nav {
+				span {
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
